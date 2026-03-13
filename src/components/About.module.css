@@ -1,0 +1,120 @@
+.section {
+  padding: 80px 0 96px;
+  background: var(--white);
+  position: relative;
+}
+
+.waveTop {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  line-height: 0;
+}
+.waveTop svg { display: block; width: 100%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.imageCol {
+  position: relative;
+}
+
+.imageFr {
+  position: relative;
+}
+
+.imageMain {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(232, 24, 109, 0.18);
+  aspect-ratio: 4/5;
+  border: 4px solid var(--pink-light);
+}
+
+.imageMain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(212, 160, 23, 0.45);
+}
+
+.badgeNumber {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+
+.badgeText {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.95);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyText {
+  font-size: 1rem;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.highlightItem {
+  background: var(--pink-pale);
+  border: 2px solid var(--pink-light);
+  border-radius: var(--radius-md);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.highlightItem strong {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--pink-primary);
+}
+
+.highlightItem span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; gap: 48px; }
+  .imageBadge { right: 0; bottom: -16px; }
+}

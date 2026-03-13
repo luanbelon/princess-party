@@ -1,0 +1,20 @@
+.wrapper :global(.section) {
+  padding: 56px 0 72px;
+}
+
+.wrapper :global(.grid) {
+  align-items: stretch;
+}
+
+.wrapper :global(.bodyText) {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.wrapper :global(.section-title) {
+  color: #ffffff;
+  font-family: PLAYFAIR DISPLAY;
+  width: 80%;
+  font-size: 2.6rem;
+}
+

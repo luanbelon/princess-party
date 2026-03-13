@@ -1,0 +1,134 @@
+.section {
+  padding: 48px 0 80px;
+  background: var(--pink-pale);
+  position: relative;
+}
+
+.waveTop {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  line-height: 0;
+}
+.waveTop svg { display: block; width: 100%; }
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-top: 16px;
+}
+
+.headerTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.375rem; /* 38px */
+  font-weight: 600;
+  color: var(--pink-primary);
+  margin-bottom: 16px;
+}
+
+.headerSubtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.header .section-label {
+  background: var(--purple);
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px 32px;
+  border: 2.5px solid var(--pink-light);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--pink-primary), var(--gold-light));
+  border-radius: 0;
+}
+
+.card:hover {
+  transform: translateY(-8px) rotate(-0.5deg);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--pink-medium);
+}
+
+.iconWrap {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--pink-light), var(--pink-softer));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--pink-primary);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.card:hover .iconWrap {
+  background: linear-gradient(135deg, var(--pink-primary), var(--pink-hot));
+  color: var(--white);
+  transform: rotate(8deg) scale(1.08);
+}
+
+.iconWrap svg {
+  width: 30px;
+  height: 30px;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.cardText {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--pink-primary);
+  background: var(--pink-light);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  transition: background var(--transition), gap var(--transition);
+  align-self: flex-start;
+}
+
+.cardLink:hover {
+  gap: 10px;
+  background: var(--pink-softer);
+}

@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #ffffff;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled {
+  background: #ffffff;
+  box-shadow: 0 4px 24px rgba(232, 24, 109, 0.12);
+}
+
+.topbar {
+  background: var(--purple);
+  backdrop-filter: blur(10px);
+}
+
+.topbarInner {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 6px 0;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.topbarInner a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mainBar {
+  padding: 12px 0 14px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brandName {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--pink-primary);
+  transition: color 0.3s;
+  letter-spacing: -0.01em;
+}
+
+.scrolledBrand .brandName {
+  color: var(--pink-primary);
+}
+
+.brandSub {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pink-medium);
+  transition: color 0.3s;
+}
+
+.scrolledBrand .brandSub {
+  color: var(--pink-medium);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.link {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--pink-primary);
+  letter-spacing: 0.01em;
+  transition: color var(--transition);
+  padding: 4px 0;
+}
+
+.scrolledLink {
+  color: var(--pink-primary);
+}
+
+.link:hover {
+  color: var(--pink-hot);
+}
+
+.scrolledLink:hover {
+  color: var(--pink-primary);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.scrolledBurger span {
+  background: var(--pink-primary);
+}
+
+@media (max-width: 900px) {
+  .burger { display: flex; }
+
+  .links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 32px;
+    gap: 20px;
+    transition: right 0.35s ease;
+    box-shadow: -8px 0 40px rgba(232, 24, 109, 0.14);
+  }
+
+  .links.open { right: 0; }
+
+  .link {
+    color: var(--text-dark);
+    font-size: 1.15rem;
+  }
+  .link:hover { color: var(--pink-primary); }
+  .scrolledLink { color: var(--text-dark); }
+}
