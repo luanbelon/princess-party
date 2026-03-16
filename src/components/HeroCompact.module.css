@@ -270,4 +270,24 @@
   .mediaCol {
     width: 100%;
   }
+
+  .crown {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .crown img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .actions a {
+    width: 100%;
+  }
 }

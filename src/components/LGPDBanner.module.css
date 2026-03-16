@@ -1,0 +1,103 @@
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: var(--pink-pale);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--border);
+  padding: 16px 24px;
+}
+
+.banner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.checkboxContainer input {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid var(--pink-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: var(--pink-primary);
+}
+
+.checkboxContainer input:checked ~ .checkmark:after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.link {
+  color: var(--teal);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.button {
+  background-color: var(--pink-primary);
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  transition: all 0.3s ease;
+}
+
+.button:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+  background-color: var(--pink-hot);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

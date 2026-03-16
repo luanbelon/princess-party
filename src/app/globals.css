@@ -69,6 +69,12 @@ h5 {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  h2, .section-title {
+    font-size: 2rem !important;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;

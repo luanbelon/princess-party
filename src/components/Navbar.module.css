@@ -56,7 +56,7 @@
   display: block;
   margin-bottom: 4px;
   position: absolute;
-  top: 10;
+  top: 10px;
 }
 
 .brandSub {
@@ -114,7 +114,7 @@
   display: block;
   width: 24px;
   height: 2.5px;
-  background: var(--white);
+  background: var(--pink-primary);
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -125,6 +125,13 @@
 
 @media (max-width: 900px) {
   .burger { display: flex; }
+
+  .logoImg {
+    position: relative;
+    top: 0;
+    height: 70px;
+    margin-bottom: 0;
+  }
 
   .links {
     position: fixed;

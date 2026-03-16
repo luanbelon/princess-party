@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import LGPDBanner from "@/components/LGPDBanner";
 
 export const metadata: Metadata = {
   title: "Princess Party — Festas e Spa para Meninas em Seixal",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-PT">
-      <body>{children}</body>
+      <body>
+        {children}
+        <LGPDBanner />
+      </body>
     </html>
   );
 }
