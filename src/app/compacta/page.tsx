@@ -14,7 +14,7 @@ export default function Compacta() {
       <main>
         {/* 1. Hero compacto com info + slider */}
         <HeroCompact />
-
+        
         {/* 2. Pacotes & preços resumidos */}
         <PackagesCompact /> 
 

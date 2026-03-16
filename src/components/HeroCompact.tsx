@@ -4,9 +4,11 @@ import { useEffect, useState } from 'react';
 import styles from './HeroCompact.module.css';
 
 const slides = [
-  { src: '/hero.jpg', alt: 'Espaco principal Princess Party' },
-  { src: '/gallery-party.jpg', alt: 'Festa de aniversario cheia de baloes' },
-  { src: '/gallery-spa.jpg', alt: 'Meninas a desfrutar do spa infantil' },
+  { src: '/galeria/galeria1.jpg', alt: 'Meninas a relaxar no spa infantil' },
+  { src: '/galeria/galeria2.jpg', alt: 'Equipa a cuidar das princesas no spa' },
+  { src: '/galeria/galeria3.jpg', alt: 'Princesa a brincar no espaco de beleza' },
+  { src: '/galeria/0457.jpg', alt: 'Festa com decoracao rosa e dourado' },
+  { src: '/galeria/0276.jpg', alt: 'Mesa de bolo cheia de detalhes' },
 ];
 
 export default function HeroCompact() {

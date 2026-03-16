@@ -1,11 +1,12 @@
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(160deg, #e07aaa 0%, #c95c88 35%, #b04878 65%, #8c3460 100%);
+  background-color: #F3B0CF;
+  /* background: linear-gradient(160deg, #e07aaa 0%, #c95c88 35%, #b04878 65%, #8c3460 100%); */
 }
 
 .bgDecor {
@@ -62,9 +63,11 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-18px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -133,11 +136,13 @@
 }
 
 @keyframes twinkle {
+
   0%,
   100% {
     opacity: 0.3;
     transform: scale(0.9);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.2);
@@ -156,12 +161,15 @@
 }
 
 .textCol {
-  flex: 0 0 45vw;
-  max-width: 540px;
+  flex: 0 0 40vw;
+  max-width: 520px;
 }
 
 .mediaCol {
-  flex: 0 0 30vw;
+  flex: 0 0 35vw;
+  max-height: 40vh;
+  display: flex;
+  align-items: center;
 }
 
 .crown {
@@ -178,10 +186,12 @@
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
@@ -189,19 +199,21 @@
 
 .title {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
   color: #ffffff;
   font-weight: 600;
   line-height: 1.15;
   margin-bottom: 18px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
 }
 
 .subtitle {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.96);
   line-height: 1.6;
   margin-bottom: 24px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .actions {
@@ -220,23 +232,27 @@
   overflow: hidden;
   border-radius: 32px;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 44vh;
+  max-height: 44vh;
 }
 
 .track {
   display: flex;
-  width: 300%;
+  height: 100%;
   transition: transform 0.8s ease-in-out;
 }
 
 .slide {
-  min-width: 100%;
-  height: 360px;
+  flex: 0 0 100%;
+  height: 100%;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 @media (max-width: 900px) {
@@ -244,13 +260,14 @@
     flex-direction: column;
     padding-top: 120px;
   }
+
   .textCol,
   .mediaCol {
     flex: 1 1 auto;
     max-width: 100%;
   }
+
   .mediaCol {
     width: 100%;
   }
 }
-

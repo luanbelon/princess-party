@@ -1,6 +1,6 @@
 .section {
   padding: 80px 0 96px;
-  background: linear-gradient(160deg, #9e3060 0%, #c95c88 50%, #e07aaa 100%);
+  background: linear-gradient(160deg, var(--pink-primary) 0%, var(--purple) 100%);
   position: relative;
 }
 

@@ -1,0 +1,80 @@
+.accordionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: var(--teal); /* Sky (Apoio): #B3E5FC */
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border); /* Optional subtle border */
+}
+
+.item.open {
+  background-color: var(--teal);
+  border-radius: 24px;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: transparent;
+  color: var(--text-dark); /* Graphite (Texto): #2E2E2E for good contrast on Sky */
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.item.open .question {
+  padding-bottom: 12px;
+}
+
+.iconWrapper {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--pink-primary); /* Princess Pink (Primária): #F3B0CF */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 16px;
+  box-shadow: 0 2px 6px rgba(243, 176, 207, 0.4); /* subtle pink shadow */
+}
+
+.icon {
+  color: var(--white);
+  font-size: 10px;
+  display: inline-block;
+}
+
+.answerWrapper {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  will-change: max-height;
+}
+
+.answerContent {
+  padding: 0 24px 30px;
+  color: var(--text-body); /* Graphite (Texto): #2E2E2E */
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.answerContent p {
+  margin-bottom: 10px;
+}
+
+.answerContent p:last-child {
+  margin-bottom: 0;
+}

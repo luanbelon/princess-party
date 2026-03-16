@@ -1,0 +1,36 @@
+.pageTitle {
+  padding: 160px 0 80px;
+  background: linear-gradient(135deg, var(--pink-primary), var(--pink-hot));
+  text-align: center;
+  color: var(--white);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    padding: 140px 0 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 40px;
+  }
+}

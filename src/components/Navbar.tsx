@@ -14,10 +14,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { href: '#servicos', label: 'Festas & Pacotes' },
-    { href: '#sobre', label: 'O Espaco' },
-    { href: '#galeria', label: 'Galeria' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '#pacotes', label: 'Festas & Pacotes' },
+    { href: '#galeria', label: 'O Espaco' },
+    { href: '/galeria', label: 'Galeria' },
+    { href: '/faq', label: 'FAQ' },
     { href: '#contacto', label: 'Contactos' },
   ];
 
@@ -39,9 +39,8 @@ export default function Navbar() {
       <div className={styles.mainBar}>
         <div className="container">
           <nav className={styles.nav}>
-            <a href="#" className={`${styles.brand} ${scrolled ? styles.scrolledBrand : ''}`}>
-              <span className={styles.brandName}>Princess Party</span>
-              <span className={styles.brandSub}>Seixal</span>
+            <a href="/" className={`${styles.brand} ${scrolled ? styles.scrolledBrand : ''}`}>
+              <img src="/logo.png" alt="Princess Party" className={styles.logoImg} />
             </a>
 
             <ul className={`${styles.links} ${menuOpen ? styles.open : ''}`}>

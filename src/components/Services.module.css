@@ -11,7 +11,11 @@
   right: 0;
   line-height: 0;
 }
-.waveTop svg { display: block; width: 100%; }
+
+.waveTop svg {
+  display: block;
+  width: 100%;
+}
 
 .header {
   text-align: center;
@@ -21,7 +25,8 @@
 
 .headerTitle {
   font-family: 'Playfair Display', serif;
-  font-size: 2.375rem; /* 38px */
+  font-size: 2.375rem;
+  /* 38px */
   font-weight: 600;
   color: var(--pink-primary);
   margin-bottom: 16px;
@@ -120,8 +125,8 @@
   gap: 6px;
   font-size: 0.88rem;
   font-weight: 800;
-  color: var(--pink-primary);
-  background: var(--pink-light);
+  color: #fff;
+  background: #fa97c5;
   padding: 8px 16px;
   border-radius: var(--radius-full);
   transition: background var(--transition), gap var(--transition);
