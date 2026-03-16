@@ -5,6 +5,7 @@ import styles from './ContactForm.module.css';
 
 export default function ContactFormCompact() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -12,26 +13,62 @@ export default function ContactFormCompact() {
     date: '',
     service: '',
     message: '',
+    rgpdConsent: false,
   });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value, type } = e.target;
+    if (type === 'checkbox') {
+      const checked = (e.target as HTMLInputElement).checked;
+      setForm({ ...form, [name]: checked });
+    } else {
+      setForm({ ...form, [name]: value });
+    }
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(
-      `Pedido de orcamento — ${form.service || 'Servico'} — ${form.name}`,
-    );
-    const body = encodeURIComponent(
-      `Nome: ${form.name}\nEmail: ${form.email}\nTelefone: ${form.phone}\nData desejada: ${
-        form.date
-      }\nServico: ${form.service}\n\nMensagem:\n${form.message}`,
-    );
-    window.location.href = `mailto:geral@princessparty.pt?subject=${subject}&body=${body}`;
-    setSent(true);
+
+    if (!form.rgpdConsent) {
+      alert("Por favor, aceite a Política de Privacidade para enviar o formulário.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      // Registrar consentimento no banco de dados Neon
+      await fetch('/api/consent-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          consent: form.rgpdConsent,
+        }),
+      });
+
+      const subject = encodeURIComponent(
+        `Pedido de orcamento — ${form.service || 'Servico'} — ${form.name}`,
+      );
+      const body = encodeURIComponent(
+        `Nome: ${form.name}\nEmail: ${form.email}\nTelefone: ${form.phone}\nData desejada: ${form.date
+        }\nServico: ${form.service}\n\nMensagem:\n${form.message}`,
+      );
+
+      // Abrir cliente de email
+      window.location.href = `mailto:geral@princessparty.pt?subject=${subject}&body=${body}`;
+      setSent(true);
+    } catch (error) {
+      console.error("Erro ao enviar formulario", error);
+      alert("Houve um erro ao enviar o seu pedido. Por favor tente novamente.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -182,12 +219,29 @@ export default function ContactFormCompact() {
                     onChange={handleChange}
                   ></textarea>
                 </div>
+
+                <div className={styles.checkboxField} style={{ marginBottom: '24px', display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                  <input
+                    id="rgpdConsent"
+                    name="rgpdConsent"
+                    type="checkbox"
+                    required
+                    checked={form.rgpdConsent}
+                    onChange={handleChange}
+                    style={{ marginTop: '4px', cursor: 'pointer', width: '20px', height: '20px', flexShrink: 0, accentColor: 'var(--pink-primary)' }}
+                  />
+                  <label htmlFor="rgpdConsent" style={{ fontSize: '0.9rem', color: 'var(--text-dark)', cursor: 'pointer' }}>
+                    Autorizo o envio dos meus dados de acordo com o Regulamento Geral de Protecção de Dados e concordo com a Política de Privacidade.
+                  </label>
+                </div>
+
                 <button
                   type="submit"
                   className="btn-primary"
-                  style={{ width: '100%', padding: '16px', fontSize: '1rem' }}
+                  disabled={loading || !form.rgpdConsent}
+                  style={{ width: '100%', padding: '16px', fontSize: '1rem', opacity: (loading || !form.rgpdConsent) ? 0.7 : 1 }}
                 >
-                  Enviar pedido de orcamento
+                  {loading ? 'A enviar...' : 'Enviar pedido de orcamento'}
                 </button>
                 <p className={styles.disclaimer}>
                   Ao enviar, autoriza o contacto para efeitos de orcamentacao. Resposta garantida em 24h.
