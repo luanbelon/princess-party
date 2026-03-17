@@ -30,7 +30,7 @@ export default function Hero() {
           muitas fotos e zero stress para quem organiza.
         </p>
         <div className={styles.actions}>
-          <a href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href="https://wa.me/351919995052" target="_blank" rel="noopener noreferrer" className="btn-primary">
             WhatsApp
           </a>
           <a href="#pacotes" className="btn-outline">Ver Pacotes</a>

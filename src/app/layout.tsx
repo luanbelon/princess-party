@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_PT",
   },
+  icons: {
+    icon: "/logo-princess-party.png",
+  },
 };
 
 export default function RootLayout({

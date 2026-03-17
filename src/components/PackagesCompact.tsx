@@ -53,7 +53,7 @@ export default function PackagesCompact() {
               </p>
               <p className={styles.cardText}>{p.details}</p>
               <a
-                href="https://wa.me/351912345678"
+                href="https://wa.me/351919995052"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.cardLink}
