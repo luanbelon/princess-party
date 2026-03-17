@@ -197,4 +197,23 @@
   .grid { grid-template-columns: 1fr; gap: 40px; }
   .row { grid-template-columns: 1fr; }
   .formCol { padding: 24px 20px; }
+
+  .infoCol .section-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoCol .section-label {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .infoCol .bodyText {
+    text-align: center;
+  }
+
+  .infoCol .divider-gold {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

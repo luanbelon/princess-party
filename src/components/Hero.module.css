@@ -376,4 +376,13 @@
   .trustItem {
     padding: 14px 18px;
   }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions a {
+    width: 100%;
+  }
 }

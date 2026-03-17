@@ -137,3 +137,30 @@
   gap: 10px;
   background: var(--pink-softer);
 }
+
+@media (max-width: 900px) {
+  .header {
+    text-align: center;
+  }
+
+  .grid {
+    justify-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .iconWrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cardLink {
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+  }
+}

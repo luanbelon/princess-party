@@ -1,9 +1,9 @@
- 'use client';
+'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './GalleryMasonry.module.css';
 
-const images = [
+const defaultImages = [
   '/galeria/galeria1.jpg',
   '/galeria/galeria2.jpg',
   '/galeria/galeria3.jpg',
@@ -23,8 +23,37 @@ const images = [
   '/galeria/0322.jpg',
 ];
 
+type GalleryImage = {
+  id: number;
+  path: string;
+  alt: string | null;
+};
+
 export default function GalleryMasonry() {
+  const [images, setImages] = useState<GalleryImage[]>([]);
   const [active, setActive] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const res = await fetch('/api/gallery');
+        if (!res.ok) {
+          throw new Error('erro');
+        }
+        const data = await res.json();
+        const items = (data.items || []) as { id: number; path: string; alt?: string | null }[];
+        if (items.length > 0) {
+          setImages(items.map((it) => ({ id: it.id, path: it.path, alt: it.alt ?? null })));
+        } else {
+          setImages(defaultImages.map((p, i) => ({ id: i + 1, path: p, alt: null })));
+        }
+      } catch {
+        setImages(defaultImages.map((p, i) => ({ id: i + 1, path: p, alt: null })));
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   return (
     <section className={styles.section}>
@@ -36,14 +65,14 @@ export default function GalleryMasonry() {
         </div>
       </div>
       <div className={styles.masonry}>
-        {images.map((src, i) => (
+        {images.map((img) => (
           <button
             type="button"
-            key={src + i}
+            key={img.id}
             className={styles.item}
-            onClick={() => setActive(src)}
+            onClick={() => setActive(img.path)}
           >
-            <img src={src} alt="Festa infantil Princess Party" loading="lazy" />
+            <img src={img.path} alt={img.alt || 'Festa infantil Princess Party'} loading="lazy" />
           </button>
         ))}
       </div>

@@ -14,7 +14,7 @@
 }
 
 .topbar {
-  background: var(--purple);
+  background: var(--pink-primary);
   backdrop-filter: blur(10px);
 }
 
