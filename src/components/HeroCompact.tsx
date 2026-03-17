@@ -51,12 +51,12 @@ export default function HeroCompact() {
           </p>
           <div className={styles.actions}>
             <a
-              href="https://wa.me/351912345678"
+              href="https://wa.me/351919995052"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Orçamentono WhatsApp
+              Orçamento no WhatsApp
             </a>
             <a href="#pacotes" className="btn-outline">
               Ver packs
