@@ -6,8 +6,8 @@ import styles from './HeroCompact.module.css';
 const slides = [
   { src: '/galeria/galeria1.jpg', alt: 'Meninas a relaxar no spa infantil' },
   { src: '/galeria/galeria2.jpg', alt: 'Equipa a cuidar das princesas no spa' },
-  { src: '/galeria/galeria3.jpg', alt: 'Princesa a brincar no espaco de beleza' },
-  { src: '/galeria/0457.jpg', alt: 'Festa com decoracao rosa e dourado' },
+  { src: '/galeria/galeria3.jpg', alt: 'Princesa a brincar no Espaço de beleza' },
+  { src: '/galeria/0457.jpg', alt: 'Festa com decoração  rosa e dourado' },
   { src: '/galeria/0276.jpg', alt: 'Mesa de bolo cheia de detalhes' },
 ];
 
@@ -42,12 +42,12 @@ export default function HeroCompact() {
           </div>
           <h1 className={styles.title}>
             Onde os sonhos se tornam
-            festas inesqueciveis
+            festas inesquecíveis
           </h1>
           <p className={styles.subtitle}>
-            Espaço de festas infantis em Seixal, com temas de princesa,
+            Espaço de festas infantis no Seixal, com o tema Princesas. 
             <br />
-            muitas fotos e zero stress para quem organiza.
+            Se quer um dia mágico para a sua Princesa está no lugar certo! Fale connosco que nós tratamos de tudo.
           </p>
           <div className={styles.actions}>
             <a
@@ -56,7 +56,7 @@ export default function HeroCompact() {
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Orcamento no WhatsApp
+              Orçamentono WhatsApp
             </a>
             <a href="#pacotes" className="btn-outline">
               Ver packs
@@ -64,7 +64,7 @@ export default function HeroCompact() {
           </div>
         </div>
 
-        <div className={styles.mediaCol} aria-label="Fotos do espaco">
+        <div className={styles.mediaCol} aria-label="Fotos do Espaço">
           <div className={styles.slider}>
             <div
               className={styles.track}

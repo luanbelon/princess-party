@@ -9,7 +9,7 @@ const services = [
         <path d="M18 32h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Temas magicos',
+    title: 'Temas mágicos',
     description:
       'Cenarios de princesa com coroas, castelos e detalhes encantados, pensados para brilhar em cada fotografia.',
   },
@@ -42,7 +42,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicos" className={styles.section}>
+    <section id="serviços" className={styles.section}>
       <div className={styles.waveTop}>
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path d="M0,40 C360,80 1080,0 1440,40 L1440,0 L0,0 Z" fill="#fff5fb"/>
@@ -52,9 +52,9 @@ export default function Services() {
         <div className={styles.header}>
           <span className="section-label">O que oferecemos</span>
           <h2 className={styles.headerTitle}>
-            Servicos pensados para
+            Serviços pensados para
             <br />
-            momentos inesqueciveis
+            momentos inesquecíveis
           </h2>
           <div className="divider-gold"></div>
           <p className={styles.headerSubtitle}>

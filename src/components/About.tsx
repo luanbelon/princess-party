@@ -20,7 +20,7 @@ export default function About() {
           <div className={styles.imageCol}>
             <div className={styles.imageFr}>
               <div className={styles.imageMain}>
-                <img src="/hero.jpg" alt="Interior do espaco Princess Party" />
+                <img src="/hero.jpg" alt="Interior do Espaço Princess Party" />
               </div>
               <div className={styles.imageBadge}>
                 <span className={styles.badgeNumber}>5</span>

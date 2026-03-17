@@ -41,7 +41,7 @@ export default function Gallery() {
       <div className="container">
         <div className={styles.header}>
           <span className="section-label">Galeria</span>
-          <h2 className="section-title">Veja o nosso espaco magico</h2>
+          <h2 className="section-title">Veja o nosso espaço mágico</h2>
           <div className="divider-gold"></div>
           <p className="section-subtitle">
             Cada cantinho foi pensado ao detalhe para criar a atmosfera perfeita para a sua princesa.
@@ -58,7 +58,7 @@ export default function Gallery() {
           ))}
         </div>
         <div className={styles.cta}>
-          <p className={styles.ctaText}>Quer ver o espaco pessoalmente?</p>
+          <p className={styles.ctaText}>Quer ver o Espaço pessoalmente?</p>
           <a href="#contacto" className="btn-primary">Agende uma visita gratuita</a>
         </div>
       </div>

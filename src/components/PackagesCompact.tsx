@@ -2,27 +2,27 @@ import styles from './Services.module.css';
 
 const packages = [
   {
-    name: 'Aniversario',
-    meta: '2h · até 12 crianças',
-    price: 'desde 199 €',
+    name: 'Aniversário',
+    meta: 'Mínimo 10 participantes',
+    price: 'desde €23',
     details: 'Festa de aniversário com decoração base, música e brincadeiras leves para a primeira festa de princesa.',
   },
   {
-    name: 'Cha de Princesas',
-    meta: '2h30 · até 15 crianças',
-    price: 'desde 279 €',
+    name: 'Chá de Princesas',
+    meta: 'Mínimo 6 participantes',
+    price: 'desde €23',
     details: 'Chá de princesas com decoração especial, mesa de bolo, anfitriã temática e momento de coroação.',
   },
   {
     name: 'SPA',
-    meta: '3h · até 18 crianças',
-    price: 'desde 349 €',
+    meta: 'Mínimo 3 participantes',
+    price: 'desde €18',
     details: 'Experiência de spa infantil com roupões, cuidados de beleza e muitas fotos com as amigas.',
   },
   {
-    name: 'SPA Mae e Eu',
-    meta: '2h · mãe + filha',
-    price: 'desde 169 €',
+    name: 'SPA Mãe e Eu',
+    meta: 'Mínimo 2 participantes',
+    price: 'desde €50',
     details: 'Sessão exclusiva de spa para mãe e filha, com momento relaxante, fotos e memórias para guardar para sempre.',
   },
 ];
@@ -32,8 +32,8 @@ export default function PackagesCompact() {
     <section id="pacotes" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
-          <span className="section-label">Pacotes &amp; Precos</span>
-          <h2 className={styles.headerTitle}>Escolhe o pacote perfeito</h2>
+          <span className="section-label">Pacotes &amp; Preços</span>
+          <h2 className={styles.headerTitle}>Escolha a opção perfeita</h2>
           <div className="divider-gold"></div>
         </div>
         <div className={styles.grid}>
@@ -45,7 +45,7 @@ export default function PackagesCompact() {
                   <path d="M18 26l4 4 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className={styles.cardTitle}>Pacote {p.name}</h3>
+              <h3 className={styles.cardTitle}>{p.name}</h3>
               <p className={styles.cardText}>
                 <strong>{p.meta}</strong>
                 <br />
@@ -58,7 +58,7 @@ export default function PackagesCompact() {
                 rel="noopener noreferrer"
                 className={styles.cardLink}
               >
-                Falar no WhatsApp
+                Para mais detalhes contactar
               </a>
             </article>
           ))}

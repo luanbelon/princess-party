@@ -22,7 +22,7 @@ export default function Hero() {
         <h1 className={styles.title}>
           Onde os sonhos se tornam
           <br />
-          festas inesqueciveis
+          festas inesquecíveis
         </h1>
         <p className={styles.subtitle}>
           Espaço de festas infantis em [cidade], com temas de princesa,
@@ -59,7 +59,7 @@ export default function Hero() {
         </svg>
       </div>
 
-      <a href="#servicos" className={styles.scrollHint} aria-label="Ver mais">
+      <a href="#serviços" className={styles.scrollHint} aria-label="Ver mais">
         <span></span>
       </a>
     </section>

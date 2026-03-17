@@ -3,20 +3,20 @@ import styles from './Testimonials.module.css';
 const testimonials = [
   {
     name: 'Ana Paula Ferreira',
-    role: 'Mae da Margarida, 6 anos',
-    text: 'A minha filha ainda sonha com a festa que fizemos no Princess Party. A equipa foi incrivelmente atenciosa, o espaco e lindo e cada detalhe foi pensado a perfeicao. Recomendo sem reservas!',
+    role: 'Mãe da Margarida, 6 anos',
+    text: 'A minha filha ainda sonha com a festa que fizemos no Princess Party. A equipa foi incrivelmente atenciosa, o Espaço e lindo e cada detalhe foi pensado a perfeicao. Recomendo sem reservas!',
     stars: 5,
   },
   {
     name: 'Carla Rodrigues',
-    role: 'Mae da Ines, 8 anos',
-    text: 'Fizemos o spa de aniversario e foi uma experiencia magica. As meninas adoraram, a manicure, a maquilhagem, o ambiente... voltaremos com certeza! Servico de excelencia em tudo.',
+    role: 'Mãe da Ines, 8 anos',
+    text: 'Fizemos o spa de aniversário e foi uma experiencia magica. As meninas adoraram, a manicure, a maquilhagem, o ambiente... voltaremos com certeza! Servico de excelencia em tudo.',
     stars: 5,
   },
   {
     name: 'Sofia Mendes',
-    role: 'Mae da Beatriz, 7 anos',
-    text: 'Organizámos o baptizado da Beatriz aqui e foi perfeito. Espaço amplo, elegante e a equipa cuidou de tudo. Os convidados ficaram impressionados com a qualidade e o bom gosto da decoração.',
+    role: 'Mãe da Beatriz, 7 anos',
+    text: 'Organizámos o batizado da Beatriz aqui e foi perfeito. Espaço amplo, elegante e a equipa cuidou de tudo. Os convidados ficaram impressionados com a qualidade e o bom gosto da decoração.',
     stars: 5,
   },
 ];

@@ -9,7 +9,7 @@ export default function Footer() {
             <img src="/logo.png" alt="Princess Party" className={styles.logoImg} />
             <span className={styles.brandSub}>Seixal, Portugal</span>
             <p className={styles.brandDesc}>
-              Um espaco magico criado com amor para as princesas mais especiais da sua vida.
+              Um espaço mágico criado com muito amor e com o propósito de fazer sonhar as nossas princesas.
             </p>
             <div className={styles.social}>
               <a href="https://www.instagram.com/princessparty.pt/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -34,20 +34,20 @@ export default function Footer() {
           </div>
 
           <div className={styles.linksCol}>
-            <h4>Servicos</h4>
+            <h4>Serviços</h4>
             <ul>
-              <li><a href="#servicos">Festa de Aniversario</a></li>
-              <li><a href="#servicos">Spa para Meninas</a></li>
-              <li><a href="#servicos">Baptizado</a></li>
-              <li><a href="#servicos">Eventos Escolares</a></li>
+              <li><a href="#serviços">Festa de aniversário</a></li>
+              <li><a href="#serviços">Spa para Meninas</a></li>
+              <li><a href="#serviços">Batizado</a></li>
+              <li><a href="#serviços">Eventos Escolares</a></li>
             </ul>
           </div>
 
           <div className={styles.linksCol}>
-            <h4>Navegacao</h4>
+            <h4>Navegação</h4>
             <ul>
-              <li><a href="#servicos">Servicos</a></li>
-              <li><a href="#sobre">O Espaço</a></li>
+              <li><a href="#serviços">Serviços</a></li>
+              <li><a href="#sobre">O espaço</a></li>
               <li><a href="#galeria">Galeria</a></li>
               <li><a href="#depoimentos">Testemunhos</a></li>
               <li><a href="#contacto">Contacto</a></li>

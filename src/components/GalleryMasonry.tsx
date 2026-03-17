@@ -8,7 +8,7 @@ const defaultImages = [
   '/galeria/galeria2.jpg',
   '/galeria/galeria3.jpg',
   '/galeria/0457.jpg',
-  '/galeria/0276.jpg',
+  '/galeria/0003.jpg',
   '/galeria/galeria7.png',
   '/galeria/galeria6.png',
   '/galeria/0022.jpg',
@@ -17,7 +17,6 @@ const defaultImages = [
   '/galeria/0233.jpg',
   '/galeria/0234.jpg',
   '/galeria/0275.jpg',
-  '/galeria/0276.jpg',
   '/galeria/0300.jpg',
   '/galeria/0321.jpg',
   '/galeria/0322.jpg',
@@ -60,7 +59,7 @@ export default function GalleryMasonry() {
       <div className="container">
         <div className={styles.header}>
           <span className="section-label">Galeria completa</span>
-          <h2 className="section-title">Um passeio pelo nosso espaco</h2>
+          <h2 className="section-title">Um passeio pelo nosso Espaço</h2>
           <div className="divider-gold"></div>
         </div>
       </div>

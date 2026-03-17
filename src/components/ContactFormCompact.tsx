@@ -221,7 +221,7 @@ export default function ContactFormCompact() {
                     style={{ marginTop: '4px', cursor: 'pointer', width: '20px', height: '20px', flexShrink: 0, accentColor: 'var(--pink-primary)' }}
                   />
                   <label htmlFor="rgpdConsent" style={{ fontSize: '0.9rem', color: 'var(--text-dark)', cursor: 'pointer' }}>
-                    Autorizo o envio dos meus dados de acordo com o Regulamento Geral de Protecção de Dados e concordo com a Política de Privacidade.
+                    Autorizo o envio dos meus dados de acordo com o Regulamento Geral de Proteção de Dados e concordo com a Política de Privacidade.
                   </label>
                 </div>
 

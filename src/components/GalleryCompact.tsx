@@ -5,7 +5,7 @@ import styles from './GalleryCompact.module.css';
 
 const images = [
   { src: '/galeria/0003.png', alt: 'Espaço princess party' },
-  { src: '/galeria/0023.jpg', alt: 'Espaço princess party' },
+  { src: '/galeria/galeria10.jpg', alt: 'Espaço princess party' },
   { src: '/galeria/0022.jpg', alt: 'Detalhes da mesa de beleza com maquilhagem' },
   { src: '/galeria/0024.jpg', alt: 'Meninas a relaxar com bebidas no spa' },
   
@@ -19,7 +19,7 @@ export default function GalleryCompact() {
       <div className="container">
         <div className={styles.header}>
           <span className="section-label">Galeria</span>
-          <h2 className="section-title">Um espreitar ao nosso espaco</h2>
+          <h2 className="section-title">Espreite a magia do nosso espaço!</h2>
           <div className="divider-gold"></div>
         </div>
         <div className={styles.carousel} aria-label="Galeria de imagens">
