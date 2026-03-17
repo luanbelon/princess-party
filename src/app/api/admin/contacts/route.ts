@@ -17,17 +17,7 @@ export async function GET() {
       );
     `;
 
-    const rows = await sql<
-      {
-        id: number;
-        name: string | null;
-        email: string | null;
-        phone: string | null;
-        event_date: string | null;
-        message: string | null;
-        created_at: string;
-      }[]
-    >`
+    const rows = await sql`
       SELECT id, name, email, phone, event_date, message, created_at
       FROM contact_requests
       ORDER BY created_at DESC

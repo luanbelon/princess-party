@@ -15,7 +15,7 @@ export async function GET() {
       );
     `;
 
-    const rows = await sql<{ id: number; path: string; alt: string | null }[]>`
+    const rows = await sql`
       SELECT id, path, alt
       FROM gallery_images
       WHERE active = TRUE

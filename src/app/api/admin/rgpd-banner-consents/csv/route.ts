@@ -4,14 +4,7 @@ export async function GET() {
   try {
     const sql = neon(process.env.DATABASE_URL!);
 
-    const rows = await sql<
-      {
-        created_at: string;
-        ip_address: string | null;
-        policy_version: string | null;
-        consent_given: boolean | null;
-      }[]
-    >`
+    const rows = await sql`
       SELECT created_at, ip_address, policy_version, consent_given
       FROM rgpd_consents
       ORDER BY created_at DESC

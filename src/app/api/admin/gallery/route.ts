@@ -15,9 +15,7 @@ export async function GET() {
       );
     `;
 
-    const rows = await sql<
-      { id: number; path: string; alt: string | null; active: boolean; created_at: string }[]
-    >`
+    const rows = await sql`
       SELECT id, path, alt, active, created_at
       FROM gallery_images
       ORDER BY created_at DESC

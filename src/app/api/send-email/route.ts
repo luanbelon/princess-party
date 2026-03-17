@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     try {
       if (process.env.DATABASE_URL) {
         const sql = neon(process.env.DATABASE_URL);
-        const rows = await sql<{ password: string }[]>`
+        const rows = await sql`
           SELECT password
           FROM smtp_settings
           ORDER BY created_at DESC
