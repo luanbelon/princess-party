@@ -20,7 +20,7 @@ export default function FAQPage() {
     },
     {
       question: "Como funcionam as reservas e o sinal?",
-      answer: <p>Para confirmar a sua reserva, solicitamos o pagamento de um sinal de 30% no ato da marcação. O restante valor deverá ser liquidado no próprio dia da festa.</p>
+      answer: <p>Para confirmar a sua reserva, solicitamos um sinal de €100 no caso dos aniversários, €50 no chá de Princesas e nos outros serviços depende do número de participantes.</p>
     },
     {
       question: "Qual é a política de cancelamentos?",
