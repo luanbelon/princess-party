@@ -15,7 +15,7 @@ export default function FAQPage() {
       answer: <p>Sim! Pode trazer o bolo e outros alimentos, mas pedimos que confirme sempre connosco previamente as alergias e evite trazer itens proibidos por questões de segurança (ex: nozes, amendoins, etc.).</p>
     },
     {
-      question: "Quantas criancas estao incluidas?",
+      question: "Quantas crianças estão incluídas?",
       answer: <p>O número de crianças depende do pacote escolhido. Podemos sempre ajustar o número de convidados mediante disponibilidade e um pequeno acréscimo por criança extra.</p>
     },
     {
@@ -23,19 +23,19 @@ export default function FAQPage() {
       answer: <p>Para confirmar a sua reserva, solicitamos o pagamento de um sinal de 30% no ato da marcação. O restante valor deverá ser liquidado no próprio dia da festa.</p>
     },
     {
-      question: "Qual é a politica de cancelamentos?",
+      question: "Qual é a política de cancelamentos?",
       answer: <p>Se precisar de cancelar, pedimos que nos avise com até 7 dias de antecedência. Oferecemos a possibilidade de remarcação sem qualquer custo adicional (válido para uma vez).</p>
     },
     {
-      question: "Ha estacionamento no local?",
+      question: "Há estacionamento no local?",
       answer: <p>Sim, existem lugares de estacionamento nas redondezas do nosso espaço para facilitar a chegada e partida das famílias.</p>
     },
     {
-      question: "Posso trazer animacao externa?",
+      question: "Posso trazer animação externa?",
       answer: <p>De forma a garantirmos a qualidade e a segurança do evento, pedimos que verifique connosco antes. A animação externa está sujeita à nossa política e à possibilidade de integração com a nossa equipa.</p>
     },
     {
-      question: "Com que antecedencia devo reservar?",
+      question: "Com que antecedência devo reservar?",
       answer: <p>Recomendamos que efetue a sua reserva com uma antecedência ideal de 3 a 4 semanas para garantir a disponibilidade na data desejada.</p>
     }
   ];

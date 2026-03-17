@@ -15,7 +15,7 @@ export default function InternalNavbar() {
 
   const links = [
     { href: '/#pacotes', label: 'Festas & Pacotes' },
-    { href: '/#galeria', label: 'O Espaco' },
+    { href: '/#galeria', label: 'O Espaço' },
     { href: '/galeria', label: 'Galeria' },
     { href: '/faq', label: 'FAQ' },
     { href: '/#contacto', label: 'Contactos' },

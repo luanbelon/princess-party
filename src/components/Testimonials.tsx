@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: 'Sofia Mendes',
     role: 'Mae da Beatriz, 7 anos',
-    text: 'Organizamos o baptizado da Beatriz aqui e foi perfeito. Espaco amplo, elegante e a equipa cuidou de tudo. Os convidados ficaram impressionados com a qualidade e o bom gosto da decoracao.',
+    text: 'Organizámos o baptizado da Beatriz aqui e foi perfeito. Espaço amplo, elegante e a equipa cuidou de tudo. Os convidados ficaram impressionados com a qualidade e o bom gosto da decoração.',
     stars: 5,
   },
 ];

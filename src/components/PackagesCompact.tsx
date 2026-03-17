@@ -2,22 +2,28 @@ import styles from './Services.module.css';
 
 const packages = [
   {
-    name: 'Brilho',
+    name: 'Aniversario',
     meta: '2h · até 12 crianças',
     price: 'desde 199 €',
-    details: 'Decoracao base, musica ambiente e brincadeiras leves para a primeira festa de princesa.',
+    details: 'Festa de aniversário com decoração base, música e brincadeiras leves para a primeira festa de princesa.',
   },
   {
-    name: 'Coroa',
+    name: 'Cha de Princesas',
     meta: '2h30 · até 15 crianças',
     price: 'desde 279 €',
-    details: 'Decoracao + mesa de bolo, anfitria em tema de princesa generica e mini-coroacao.',
+    details: 'Chá de princesas com decoração especial, mesa de bolo, anfitriã temática e momento de coroação.',
   },
   {
-    name: 'Castelo',
+    name: 'SPA',
     meta: '3h · até 18 crianças',
     price: 'desde 349 €',
-    details: 'Decoracao completa, duas animadoras, luz ambiente e lembranca especial para a aniversariante.',
+    details: 'Experiência de spa infantil com roupões, cuidados de beleza e muitas fotos com as amigas.',
+  },
+  {
+    name: 'SPA Mae e Eu',
+    meta: '2h · mãe + filha',
+    price: 'desde 169 €',
+    details: 'Sessão exclusiva de spa para mãe e filha, com momento relaxante, fotos e memórias para guardar para sempre.',
   },
 ];
 

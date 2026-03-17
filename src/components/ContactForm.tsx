@@ -54,8 +54,8 @@ export default function ContactForm() {
             <h2 className="section-title">Reserve o dia especial da sua princesa</h2>
             <div className="divider-gold"></div>
             <p className={styles.bodyText}>
-              Preencha o formulario e entraremos em contacto em menos de 24 horas para apresentar 
-              todas as opcoes e preparar uma proposta personalizada.
+              Preencha o formulário e entraremos em contacto em menos de 24 horas para apresentar 
+              todas as opções e preparar uma proposta personalizada.
             </p>
 
             <div className={styles.contactItems}>
@@ -67,7 +67,7 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <strong>Localizacao</strong>
+                  <strong>Localização</strong>
                   <span>Av. Principal 9 A e B, Casal do Marco, 2840-169 Arrentela, Portugal</span>
                 </div>
               </div>
@@ -102,8 +102,8 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <strong>Horario</strong>
-                  <span>Seg-Sex: 10h-20h | Sab-Dom: 10h-22h</span>
+                  <strong>Horário</strong>
+                  <span>Seg-Sex: 10h-20h | Sáb-Dom: 10h-22h</span>
                 </div>
               </div>
             </div>
@@ -146,10 +146,10 @@ export default function ContactForm() {
                   <textarea id="message" name="message" rows={4} placeholder="Conte-nos um pouco sobre o evento que tem em mente..." value={form.message} onChange={handleChange}></textarea>
                 </div>
                 <button type="submit" className="btn-primary" style={{ width: '100%', padding: '16px', fontSize: '1rem' }}>
-                  Enviar pedido de orcamento
+                  Enviar pedido de orçamento
                 </button>
                 <p className={styles.disclaimer}>
-                  Ao enviar, autoriza o contacto para efeitos de orcamentacao. Resposta garantida em 24h.
+                  Ao enviar, autoriza o contacto para efeitos de orçamentação. Resposta garantida em 24h.
                 </p>
               </form>
             )}

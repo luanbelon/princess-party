@@ -45,7 +45,7 @@ export default function HeroCompact() {
             festas inesqueciveis
           </h1>
           <p className={styles.subtitle}>
-            Espaco de festas infantis em Seixal, com temas de princesa,
+            Espaço de festas infantis em Seixal, com temas de princesa,
             <br />
             muitas fotos e zero stress para quem organiza.
           </p>

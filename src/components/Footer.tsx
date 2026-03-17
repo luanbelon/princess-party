@@ -47,7 +47,7 @@ export default function Footer() {
             <h4>Navegacao</h4>
             <ul>
               <li><a href="#servicos">Servicos</a></li>
-              <li><a href="#sobre">O Espaco</a></li>
+              <li><a href="#sobre">O Espaço</a></li>
               <li><a href="#galeria">Galeria</a></li>
               <li><a href="#depoimentos">Testemunhos</a></li>
               <li><a href="#contacto">Contacto</a></li>

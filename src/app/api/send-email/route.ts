@@ -66,7 +66,7 @@ export async function POST(request: Request) {
       },
     });
 
-    const subject = `Pedido de orcamento — ${name}`;
+    const subject = `Pedido de orçamento — ${name}`;
 
     const text = [
       `Nome: ${name}`,

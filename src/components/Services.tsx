@@ -21,7 +21,7 @@ const services = [
         <path d="M8 22l16-10 16 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Espaco seguro',
+    title: 'Espaço seguro',
     description:
       'Playground infantil fechado, com regras simples, higienizacao frequente e equipa sempre atenta aos pequenos.',
   },

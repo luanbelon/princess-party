@@ -1,10 +1,10 @@
 import styles from './About.module.css';
 
 const highlights = [
-  { number: '150 m²', label: 'de espaco exclusivo' },
-  { number: 'Ate 30', label: 'criancas por evento' },
+  { number: '150 m²', label: 'de espaço exclusivo' },
+  { number: 'Até 30', label: 'crianças por evento' },
   { number: '100%', label: 'seguro e higienizado' },
-  { number: 'Seixal', label: 'facil acesso' },
+  { number: 'Seixal', label: 'fácil acesso' },
 ];
 
 export default function About() {
@@ -30,17 +30,17 @@ export default function About() {
           </div>
 
           <div className={styles.textCol}>
-            <span className="section-label">O nosso espaco</span>
+            <span className="section-label">O nosso espaço</span>
             <h2 className="section-title">Um mundo encantado criado com amor</h2>
             <div className="divider-gold"></div>
             <p className={styles.bodyText}>
-              O Princess Party nasceu do desejo de criar um espaco verdadeiramente magico para as meninas em Seixal. 
-              Cada detalhe foi pensado para proporcionar momentos unicos, desde a decoracao delicada ate aos servicos 
+              O Princess Party nasceu do desejo de criar um espaço verdadeiramente mágico para as meninas em Seixal. 
+              Cada detalhe foi pensado para proporcionar momentos únicos, desde a decoração delicada até aos serviços 
               personalizados que oferecemos.
             </p>
             <p className={styles.bodyText}>
-              Contamos com uma equipa apaixonada e experiente, dedicada a fazer de cada evento uma memoria 
-              inesquecivel. Porque cada princesa merece o melhor.
+              Contamos com uma equipa apaixonada e experiente, dedicada a fazer de cada evento uma memória 
+              inesquecível. Porque cada princesa merece o melhor.
             </p>
             <div className={styles.highlights}>
               {highlights.map((h) => (
