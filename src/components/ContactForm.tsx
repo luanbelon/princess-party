@@ -10,7 +10,6 @@ export default function ContactForm() {
     email: '',
     phone: '',
     date: '',
-    service: '',
     message: '',
   });
 
@@ -18,14 +17,32 @@ export default function ContactForm() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Pedido de orcamento — ${form.service || 'Servico'} — ${form.name}`);
-    const body = encodeURIComponent(
-      `Nome: ${form.name}\nEmail: ${form.email}\nTelefone: ${form.phone}\nData desejada: ${form.date}\nServico: ${form.service}\n\nMensagem:\n${form.message}`
-    );
-    window.location.href = `mailto:geral@princessparty.pt?subject=${subject}&body=${body}`;
-    setSent(true);
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          date: form.date,
+          message: form.message,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Falha ao enviar email');
+      }
+
+      setSent(true);
+    } catch (error) {
+      console.error('Erro ao enviar formulario', error);
+      alert('Houve um erro ao enviar o seu pedido. Por favor tente novamente.');
+    }
   };
 
   return (
@@ -51,7 +68,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <strong>Localizacao</strong>
-                  <span>Seixal, Setubal, Portugal</span>
+                  <span>Av. Principal 9 A e B, Casal do Marco, 2840-169 Arrentela, Portugal</span>
                 </div>
               </div>
               <div className={styles.contactItem}>
@@ -63,7 +80,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <strong>Email</strong>
-                  <a href="mailto:geral@princessparty.pt">geral@princessparty.pt</a>
+                  <a href="mailto:info@princessparty.pt">info@princessparty.pt</a>
                 </div>
               </div>
               <div className={styles.contactItem}>
@@ -74,7 +91,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <strong>WhatsApp</strong>
-                  <a href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer">+351 912 345 678</a>
+                  <a href="https://wa.me/351919995052" target="_blank" rel="noopener noreferrer">+351 919 995 052</a>
                 </div>
               </div>
               <div className={styles.contactItem}>
@@ -120,22 +137,9 @@ export default function ContactForm() {
                   <label htmlFor="email">Email</label>
                   <input id="email" name="email" type="email" required placeholder="o.seu@email.com" value={form.email} onChange={handleChange} />
                 </div>
-                <div className={styles.row}>
-                  <div className={styles.field}>
-                    <label htmlFor="service">Servico</label>
-                    <select id="service" name="service" value={form.service} onChange={handleChange}>
-                      <option value="">Selecione...</option>
-                      <option>Festa de Aniversario</option>
-                      <option>Spa para Meninas</option>
-                      <option>Baptizado</option>
-                      <option>Evento Escolar</option>
-                      <option>Outro</option>
-                    </select>
-                  </div>
-                  <div className={styles.field}>
-                    <label htmlFor="date">Data desejada</label>
-                    <input id="date" name="date" type="date" value={form.date} onChange={handleChange} />
-                  </div>
+                <div className={styles.field}>
+                  <label htmlFor="date">Data desejada</label>
+                  <input id="date" name="date" type="date" value={form.date} onChange={handleChange} />
                 </div>
                 <div className={styles.field}>
                   <label htmlFor="message">Mensagem</label>

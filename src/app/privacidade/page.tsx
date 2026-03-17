@@ -34,7 +34,7 @@ export default function PrivacidadePage() {
           <h2 style={{ marginBottom: '20px' }}>4. Os Seus Direitos</h2>
           <p style={{ marginBottom: '20px' }}>
             Ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD), tem o direito de aceder, retificar, apagar, limitar 
-            ou opor-se ao tratamento dos seus dados. Para o efeito, basta contactar-nos através do e-mail geral@princessparty.pt.
+            ou opor-se ao tratamento dos seus dados. Para o efeito, basta contactar-nos através do e-mail info@princessparty.pt.
           </p>
         </div>
       </main>

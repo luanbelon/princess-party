@@ -57,9 +57,9 @@ export default function Footer() {
           <div className={styles.linksCol}>
             <h4>Contacto</h4>
             <ul>
-              <li><a href="mailto:geral@princessparty.pt">geral@princessparty.pt</a></li>
-              <li><a href="https://wa.me/351912345678">+351 912 345 678</a></li>
-              <li><span>Seixal, Setubal</span></li>
+              <li><a href="mailto:info@princessparty.pt">info@princessparty.pt</a></li>
+              <li><a href="https://wa.me/351919995052">+351 919 995 052</a></li>
+              <li><span>Av. Principal 9 A e B, Casal do Marco, 2840-169 Arrentela, Portugal</span></li>
               <li><span>Seg-Dom: 10h-22h</span></li>
             </ul>
           </div>

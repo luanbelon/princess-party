@@ -26,11 +26,16 @@ export default function Navbar() {
       <div className={styles.topbar}>
         <div className="container">
           <div className={styles.topbarInner}>
-            <span>Tel.: +351 9XX XXX XXX</span>
-            <a href="https://wa.me/3519XXXXXXXX" target="_blank" rel="noopener noreferrer">
+            <span>Tel.: +351 919 995 052</span>
+            <a href="https://wa.me/351919995052" target="_blank" rel="noopener noreferrer">
               WhatsApp
             </a>
-            <a href="#" aria-label="Instagram Princess Party">
+            <a
+              href="https://www.instagram.com/princessparty.pt/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Princess Party"
+            >
               Instagram
             </a>
           </div>

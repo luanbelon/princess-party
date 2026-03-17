@@ -4,10 +4,11 @@ import { useState } from 'react';
 import styles from './GalleryCompact.module.css';
 
 const images = [
-  { src: '/galeria/galeria7.png', alt: 'Campanha mae e filha Princess Party' },
-  { src: '/galeria/galeria6.png', alt: 'Menina em destaque na campanha de aniversarios' },
+  { src: '/galeria/0003.png', alt: 'Espaço princess party' },
+  { src: '/galeria/0023.jpg', alt: 'Espaço princess party' },
   { src: '/galeria/0022.jpg', alt: 'Detalhes da mesa de beleza com maquilhagem' },
   { src: '/galeria/0024.jpg', alt: 'Meninas a relaxar com bebidas no spa' },
+  
 ];
 
 export default function GalleryCompact() {
