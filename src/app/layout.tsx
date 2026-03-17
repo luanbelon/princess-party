@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     locale: "pt_PT",
   },
   icons: {
-    icon: "/logo-princess-party.png",
+    icon: "/favicon.ico",
   },
 };
 
