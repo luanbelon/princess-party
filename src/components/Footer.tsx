@@ -38,8 +38,6 @@ export default function Footer() {
             <ul>
               <li><a href="#serviços">Festa de aniversário</a></li>
               <li><a href="#serviços">Spa para Meninas</a></li>
-              <li><a href="#serviços">Batizado</a></li>
-              <li><a href="#serviços">Eventos Escolares</a></li>
             </ul>
           </div>
 
@@ -57,7 +55,7 @@ export default function Footer() {
             <h4>Contacto</h4>
             <ul>
               <li><a href="mailto:info@princessparty.pt">info@princessparty.pt</a></li>
-              <li><a href="https://wa.me/351919995052">+351 919 995 052</a></li>
+              <li><a href="tel:351919995052">+351 919 995 052</a></li>
               <li><span>Av. Principal 9 A e B, Casal do Marco, 2840-169 Arrentela, Portugal</span></li>
               <li><span>Seg-Dom: 10h-22h</span></li>
             </ul>

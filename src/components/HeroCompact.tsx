@@ -56,7 +56,7 @@ export default function HeroCompact() {
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Orçamento no WhatsApp
+              Orçamento por WhatsApp
             </a>
             <a href="#pacotes" className="btn-outline">
               Ver packs
