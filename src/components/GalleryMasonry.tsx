@@ -16,6 +16,7 @@ const defaultImages = [
   '/galeria/0023.jpg',
   '/galeria/0233.jpg',
   '/galeria/0234.jpg',
+  '/galeria/galeria10.jpg',
   '/galeria/0275.jpg',
   '/galeria/0300.jpg',
   '/galeria/0321.jpg',
