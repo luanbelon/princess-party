@@ -47,7 +47,7 @@ export default function HeroCompact() {
           <p className={styles.subtitle}>
             Espaço de festas infantis no Seixal, com o tema Princesas. 
             <br />
-            Se quer um dia mágico para a sua Princesa está no lugar certo! Fale connosco que nós tratamos de tudo.
+            Se quer um dia mágico para a sua Princesa, está no lugar certo! Fale connosco que nós tratamos de tudo.
           </p>
           <div className={styles.actions}>
             <a

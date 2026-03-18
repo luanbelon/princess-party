@@ -34,45 +34,46 @@ export default function LGPDBanner() {
     return () => clearTimeout(timeoutMsg);
   }, []);
 
-  const handleAccept = async () => {
-    if (!accepted) return;
-    
+  const saveConsent = async (consentValue: boolean) => {
     setLoading(true);
-    
+
     try {
-      // 1. Guardar prova no banco de dados Neon
       const res = await fetch('/api/consent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          consent: true, 
-          policyVersion: 'v1.0' 
-        })
+        body: JSON.stringify({
+          consent: consentValue,
+          policyVersion: 'v1.0',
+        }),
       });
-      
-      if (!res.ok) throw new Error("Erro na API");
 
-      // 2. Guardar no frontend (localStorage) com validade de 90 dias (3 meses)
+      if (!res.ok) throw new Error('Erro na API');
+
       const now = new Date();
       now.setDate(now.getDate() + 90);
-      
-      localStorage.setItem('rgpd-consent', JSON.stringify({
-        accepted: true,
-        expiresAt: now.toISOString(),
-        version: 'v1.0'
-      }));
-      
+
+      localStorage.setItem(
+        'rgpd-consent',
+        JSON.stringify({
+          accepted: consentValue,
+          expiresAt: now.toISOString(),
+          version: 'v1.0',
+        }),
+      );
+
       setIsVisible(false);
     } catch (error) {
       console.error('Erro ao gravar consentimento', error);
-      // Fallback: mesmo com erro na bd, deixamos o utilizador navegar para nao o bloquear, mas logamos
       const now = new Date();
       now.setDate(now.getDate() + 90);
-      localStorage.setItem('rgpd-consent', JSON.stringify({
-        accepted: true,
-        expiresAt: now.toISOString(),
-        error: true
-      }));
+      localStorage.setItem(
+        'rgpd-consent',
+        JSON.stringify({
+          accepted: consentValue,
+          expiresAt: now.toISOString(),
+          error: true,
+        }),
+      );
       setIsVisible(false);
     } finally {
       setLoading(false);
@@ -93,20 +94,45 @@ export default function LGPDBanner() {
             />
             <span className={styles.checkmark}></span>
             <span className={styles.text}>
-              Autorizo o envio de dados de acordo com o Regulamento Geral de Protecao de Dados e os vossos Termos.
+              Autorizo o envio de dados de acordo com o Regulamento Geral de Proteção de Dados e os nossos
+              Termos e Condições Gerais.
               <br />
-              Leia a nossa <Link href="/privacidade" className={styles.link}>Privacidade</Link> e <Link href="/cookies" className={styles.link}>politica de cookies</Link>.
+              Leia a nossa{' '}
+              <Link href="/privacidade" className={styles.link}>
+                Privacidade
+              </Link>
+              ,{' '}
+              <Link href="/cookies" className={styles.link}>
+                Política de cookies
+              </Link>{' '}
+              e{' '}
+              <Link href="/condicoes-gerais" className={styles.link}>
+                Condições Gerais
+              </Link>
+              .
             </span>
           </label>
         </div>
-        
-        <button 
-          className={styles.button} 
-          disabled={!accepted || loading}
-          onClick={handleAccept}
-        >
-          {loading ? 'A guardar...' : 'Confirmar e Aceitar'}
-        </button>
+
+        <div className={styles.buttonRow}>
+          <button
+            className={styles.button}
+            disabled={!accepted || loading}
+            onClick={() => saveConsent(true)}
+            type="button"
+          >
+            {loading ? 'A guardar...' : 'Confirmar e Aceitar'}
+          </button>
+
+          <button
+            className={styles.rejectButton}
+            disabled={loading}
+            onClick={() => saveConsent(false)}
+            type="button"
+          >
+            {loading ? 'A guardar...' : 'Recusar'}
+          </button>
+        </div>
       </div>
     </div>
   );

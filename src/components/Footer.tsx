@@ -47,6 +47,9 @@ export default function Footer() {
               <li><a href="#serviços">Serviços</a></li>
               <li><a href="#sobre">O espaço</a></li>
               <li><a href="#galeria">Galeria</a></li>
+              <li><a href="/privacidade">Política de Privacidade</a></li>
+              <li><a href="/cookies">Política de Cookies</a></li>
+              <li><a href="/condicoes-gerais">Condições Gerais</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </div>

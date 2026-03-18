@@ -95,6 +95,33 @@
   transform: translateY(-2px);
 }
 
+.rejectButton {
+  background-color: transparent;
+  color: var(--pink-primary);
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--pink-primary);
+  transition: all 0.3s ease;
+}
+
+.rejectButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.rejectButton:not(:disabled):hover {
+  background-color: rgba(243, 176, 207, 0.22);
+  transform: translateY(-2px);
+}
+
+.buttonRow {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .banner {
     flex-direction: row;
