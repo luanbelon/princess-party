@@ -52,9 +52,15 @@ export default function CondicoesGeraisPage() {
 
           <h2 style={{ marginBottom: '20px' }}>5. Livro de Reclamações</h2>
           <p style={{ marginBottom: '20px' }}>
-            Em caso de reclamação relacionada com os serviços, poderá solicitar o <strong>Livro de Reclamações</strong>{' '}
-            no nosso espaço. Para quaisquer esclarecimentos, pode contactar-nos através do e-mail{' '}
+            Em caso de reclamação relacionada com os serviços, poderá fazê-lo de duas formas:
+          </p>
+          <p style={{ marginBottom: '20px' }}>
+            • <strong>Livro de Reclamações físico</strong>: disponível no nosso espaço. Para solicitar ou esclarecimentos, contacte-nos através do e-mail{' '}
             <strong>info@princessparty.pt</strong>.
+          </p>
+          <p style={{ marginBottom: '20px' }}>
+            • <strong>Reclamação online</strong>: pode submeter a sua reclamação em formato eletrónico através do sítio da ASAE em{' '}
+            <a href="https://www.asae.gov.pt/submeter-reclamacao.aspx" target="_blank" rel="noopener noreferrer">www.asae.gov.pt/submeter-reclamacao.aspx</a>.
           </p>
 
           <h2 style={{ marginBottom: '20px' }}>6. Contactos</h2>

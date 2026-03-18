@@ -74,9 +74,15 @@ export default function PrivacidadePage() {
           <h2 style={{ marginBottom: '20px' }}>7. Livro de Reclamações</h2>
           <p style={{ marginBottom: '20px' }}>
             Caso pretenda apresentar uma reclamação relacionada com os nossos serviços ou com a forma como o atendimento decorre,
-            poderá fazê-lo através do <strong>Livro de Reclamações</strong> do nosso estabelecimento.
-            O Livro de Reclamações encontra-se disponível para consulta e pode ser solicitado no nosso espaço ou através do e-mail{' '}
+            poderá fazê-lo de duas formas:
+          </p>
+          <p style={{ marginBottom: '20px' }}>
+            • <strong>Livro de Reclamações físico</strong>: encontra-se disponível no nosso espaço. Pode solicitá-lo no local ou através do e-mail{' '}
             <strong>info@princessparty.pt</strong>.
+          </p>
+          <p style={{ marginBottom: '20px' }}>
+            • <strong>Reclamação online</strong>: pode também submeter a sua reclamação em formato eletrónico através do sítio da Autoridade de Segurança Alimentar e Económica (ASAE), em{' '}
+            <a href="https://www.asae.gov.pt/submeter-reclamacao.aspx" target="_blank" rel="noopener noreferrer">www.asae.gov.pt/submeter-reclamacao.aspx</a>.
           </p>
         </div>
       </main>
