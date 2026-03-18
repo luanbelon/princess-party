@@ -49,7 +49,6 @@ export default function Footer() {
               <li><a href="#serviços">Serviços</a></li>
               <li><a href="#sobre">O espaço</a></li>
               <li><a href="#galeria">Galeria</a></li>
-              <li><a href="#depoimentos">Testemunhos</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </div>
@@ -68,6 +67,16 @@ export default function Footer() {
         <div className={styles.bottom}>
           <span>&copy; {new Date().getFullYear()} Princess Party. Todos os direitos reservados.</span>
           <span>Seixal, Portugal</span>
+          <span>
+            Desenvolvido por{' '}
+            <a
+              href="https://wa.me/5571986406627"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Luan Belon
+            </a>
+          </span>
         </div>
       </div>
     </footer>

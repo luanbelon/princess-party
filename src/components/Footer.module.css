@@ -107,8 +107,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.35);
+  gap: 10px 16px;
+}
+
+.bottom a {
+  color: rgba(255, 255, 255, 0.35);
+  transition: color var(--transition);
+}
+
+.bottom a:hover {
+  color: var(--pink-light);
 }
 
 @media (max-width: 840px) {
