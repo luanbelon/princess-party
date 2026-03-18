@@ -4,7 +4,7 @@ const packages = [
   {
     name: 'Aniversário',
     meta: 'Mínimo 10 participantes',
-    price: 'desde €23 p/ pessoa',
+    price: 'desde €23 p/ pessoa', 
     details: 'Festa de aniversário com decoração base, música e brincadeiras leves para a primeira festa de princesa.',
   },
   {
