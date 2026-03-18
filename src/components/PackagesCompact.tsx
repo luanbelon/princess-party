@@ -4,25 +4,25 @@ const packages = [
   {
     name: 'Aniversário',
     meta: 'Mínimo 10 participantes',
-    price: 'desde €23',
+    price: 'desde €23 p/ pessoa',
     details: 'Festa de aniversário com decoração base, música e brincadeiras leves para a primeira festa de princesa.',
   },
   {
     name: 'Chá de Princesas',
     meta: 'Mínimo 6 participantes',
-    price: 'desde €23',
-    details: 'Chá de princesas com decoração especial, mesa de bolo, anfitriã temática e momento de coroação.',
+    price: 'desde €23 p/ pessoa',
+    details: 'Chá de princesas é um bom motivo para se reunirem e usufruirem de 2h de pura magia e diversão.',
   },
   {
     name: 'SPA',
     meta: 'Mínimo 3 participantes',
-    price: 'desde €18',
+    price: 'desde €18 p/ pessoa',
     details: 'Experiência de spa infantil com roupões, cuidados de beleza e muitas fotos com as amigas.',
   },
   {
     name: 'SPA Mãe e Eu',
     meta: 'Mínimo 2 participantes',
-    price: 'desde €50',
+    price: 'desde €50 mãe e  filha',
     details: 'Sessão exclusiva de spa para mãe e filha, com momento relaxante, fotos e memórias para guardar para sempre.',
   },
 ];

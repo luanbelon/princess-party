@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import LGPDBanner from "@/components/LGPDBanner";
 
@@ -24,6 +25,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-PT">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18024916701"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="gtag-inline"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18024916701');
+            `,
+          }}
+        />
+      </head>
       <body>
         {children}
         <LGPDBanner />
