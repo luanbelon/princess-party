@@ -20,11 +20,24 @@
 
 .topbarInner {
   display: flex;
-  justify-content: flex-end;
-  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 6px 0;
   font-size: 0.8rem;
   color: #ffffff;
+}
+
+.topbarNote {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
 }
 
 .topbarInner a {
