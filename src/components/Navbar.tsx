@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className={styles.topbar}>
         <div className="container">
           <div className={styles.topbarInner}>
-            <span className={styles.topbarNote}>Somos a antiga Princelândia Margem sul</span>
+            <span className={styles.topbarNote}>Somos a antiga Princelandia Margem sul</span>
             <div className={styles.topbarRight}>
               <span>Tel.: +351 919 995 052</span>
               <a
