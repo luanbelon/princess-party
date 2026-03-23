@@ -140,6 +140,29 @@
 }
 
 @media (max-width: 900px) {
+  .topbarInner {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: start;
+    row-gap: 6px;
+  }
+
+  .topbarNote {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    white-space: nowrap;
+    font-size: 0.76rem;
+  }
+
+  .topbarRight {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+    gap: 14px;
+    font-size: 0.95rem;
+  }
+
   .burger { display: flex; }
 
   .logoImg {
